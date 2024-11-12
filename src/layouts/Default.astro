@@ -1,4 +1,8 @@
 ---
+import { CallToActionSection } from "../sections/CallToAction";
+import { Footer } from "../sections/Footer";
+import { HeaderSection } from "../sections/Header";
+import { TestimonialsSection } from "../sections/Testimonials";
 import "../styles/global.css";
 ---
 
@@ -7,7 +11,7 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blockchain Blog - Frontend Tribe</title>
+    <title>Blockchain SaaS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +20,10 @@ import "../styles/global.css";
     />
   </head>
   <body>
+    <HeaderSection client:load />
     <slot />
+    <TestimonialsSection client:load/>
+    <CallToActionSection client:load/>
+    <Footer/>
   </body>
 </html>
