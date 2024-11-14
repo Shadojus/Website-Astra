@@ -32,7 +32,7 @@ export const HeaderSection = () => {
 
   return (
     <>
-      <header className="sticky top-0 bg-zinc-900/50 backdrop-blur-lg z-40">
+      <header className="sticky top-0 bg-zinc-900/80 backdrop-blur-sm z-40">
         <div className="container">
           <div className="flex justify-between items-center h-24 md:h-28">
             <a href="/">
