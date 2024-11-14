@@ -45,7 +45,7 @@ export const HeroSection = () => {
           Shadojus Art.Design
         </h1>
         <p className="text-center text-xl md:text-2xl mt-6 text-zinc-400 max-w-xl mx-auto">
-          watching Up the clouds – Forming astounding shapes
+          watching Up the Clouds – Forming astounding shapes
         </p>
         <div className="flex justify-center mt-10">
           <CutCornerButton className="">Get Started</CutCornerButton>
@@ -60,7 +60,7 @@ export const HeroSection = () => {
               <Hexagon className="size-[1800px]" size={1800} reverse duration={60} />
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <Circle className="absolute left-[200px] -top-[900px]" animate>
+              <Circle className="absolute left-[240px] -top-[760px]" animate>
                 <motion.img
                   ref={cubeRef}
                   src="/assets/images/cube.png"
@@ -73,7 +73,7 @@ export const HeroSection = () => {
               </Circle>
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <Circle className="absolute left-[200px] top-[270px]" animate>
+              <Circle className="absolute left-[420px] top-[160px]" animate>
                 <motion.img
                   ref={cuboidRef}
                   style={{
@@ -86,7 +86,7 @@ export const HeroSection = () => {
               </Circle>
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <Circle className="absolute -left-[600px] -top-[80px]">
+              <Circle className="absolute -left-[840px] -top-[480px]">
                 <motion.img
                   ref={torusRef}
                   style={{
@@ -114,7 +114,7 @@ export const HeroSection = () => {
               <img
                 src="/assets/images/icosahedron.png"
                 alt="3D image"
-                className="w-[500px] select-none"
+                className="w-[140px] select-none"
                 draggable="false"
               />
             </motion.div>
