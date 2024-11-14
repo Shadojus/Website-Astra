@@ -7,7 +7,7 @@ export const Circle = (props: ComponentPropsWithoutRef<"div"> & { animate?: bool
   return (
     <div
       className={twMerge(
-        "bg-zinc-900 size-[240px] inline-flex items-center justify-center rounded-full relative",
+        "bg-[rgba(42,0,128,0.1)] size-[240px] inline-flex items-center justify-center rounded-full relative",
         className
       )}
     >

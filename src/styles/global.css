@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply antialiased bg-zinc-900 text-zinc-300 font-body;
+    @apply antialiased bg-[rgb(0,0,0)] text-zinc-300 font-body;
   }
 }

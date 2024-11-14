@@ -32,7 +32,7 @@ export const HeaderSection = () => {
 
   return (
     <>
-      <header className="sticky top-0 bg-zinc-900/80 backdrop-blur-sm z-40">
+      <header className="sticky top-0 bg-[rgba(42,0,128,0.06)] backdrop-blur-sm z-40">
         <div className="container">
           <div className="flex justify-between items-center h-24 md:h-28">
             <a href="/">
@@ -76,9 +76,9 @@ export const HeaderSection = () => {
             transition={{
               duration: 0.5,
             }}
-            className="fixed size-full top-0 left-0 z-30 bg-zinc-900"
+            className="fixed size-full top-0 left-0 z-30 bg-[rgba(42,0,128)]"
           >
-            <div className="absolute inset-2 rounded-md bg-zinc-800 mt-24 md:mt-28 z-0">
+            <div className="absolute inset-2 rounded-md bg-[rgba(0,0,0,0.64)] backdrop-blur-md mt-24 md:mt-28 z-0">
               <div className="absolute top-1/2 left-full -translate-y-1/2 -translate-x-1/2 -z-10">
                 <Hexagon size={700} />
               </div>

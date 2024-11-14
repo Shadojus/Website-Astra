@@ -24,7 +24,7 @@ export const Card = (props: ComponentPropsWithoutRef<"div"> & { color?: string; 
         )}
       ></div>
 
-      <div className="absolute inset-0 bg-zinc-800 -z-10 rounded-2xl [mask-image:linear-gradient(225deg,transparent,transparent_40px,black_40px)]"></div>
+      <div className="absolute inset-0 bg-[rgba(42,0,128,0.06)] -z-10 rounded-2xl [mask-image:linear-gradient(225deg,transparent,transparent_40px,black_40px)] border border-black"></div>
       <div>{children}</div>
       <div className="flex justify-between mt-12">
         <TextButton color={color}>{buttonText || "Learn More"}</TextButton>

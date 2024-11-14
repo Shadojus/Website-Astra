@@ -24,7 +24,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-32 bg-zinc-800">
+    <section className="py-32 bg-[rgba(42,0,128,0.1)]">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8 lg:gap-12">
           {testimonials.map(({ text, name, title, avatarImage }, testimonialIndex) => (

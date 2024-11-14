@@ -26,7 +26,7 @@ export const Hexagon = (
         strokeWidth="6"
         stroke="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        className={twMerge("text-fuchsia-500/10 -rotate-6", className)}
+        className={twMerge("text-[rgba(100,100,100,0.0)] -rotate-6", className)}
         style={{
           height: size,
           width: size,
