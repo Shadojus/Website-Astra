@@ -1,10 +1,9 @@
 import { useRef } from "react";
-import { Circle } from "../components/Circle";
-import { CutCornerButton } from "../components/CutCornerButton";
-import { Hexagon } from "../components/Hexagon";
+import { twMerge } from "tailwind-merge";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { Vacuumcleanerrobot } from "../components/Vacuumcleaner";
 
-export const HeroSection = () => {
+export const VacuumSection = () => {
   const icosahedronRef = useRef(null);
   const cubeRef = useRef(null);
   const torusRef = useRef(null);
@@ -41,67 +40,42 @@ export const HeroSection = () => {
         <p className="uppercase font-extrabold text-center text-zinc-500 tracking-wider">
           Introducing Myself
         </p>
-        <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-center mt-4 max-w-3xl mx-auto">
-          Shadojus Art.Design
-        </h1>
-        <p className="text-center text-xl md:text-2xl mt-6 text-zinc-400 max-w-xl mx-auto">
-          watching Up the Clouds – Forming astounding shapes
-        </p>
-        <div className="flex justify-center mt-10">
-          <CutCornerButton className="">Get Started</CutCornerButton>
-        </div>
 
         <div className="flex justify-center mt-24">
           <div className="inline-flex relative z-0">
-            <div className="absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2">
-              <Hexagon className="size-[1240px]" size={1240} />
-            </div>
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <Hexagon className="size-[1800px]" size={1800} reverse duration={60} />
-            </div>
             <div className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2">
-              <Circle className="absolute left-[240px] -top-[760px]" animate>
+            <Vacuumcleanerrobot className="absolute left-[-100px] -top-[-100px]" animate>
                 <motion.img
                   ref={cubeRef}
-                  src="/assets/images/cube.png"
+                  src="/assets/images/Loadingstation.png"
                   alt="Cuboid image"
-                  className="size-[140px]"
-                />
-              </Circle>
-            </div>
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <Circle className="absolute -left-[840px] -top-[480px]">
-                <motion.img
-                  ref={torusRef}
                   style={{
-                    rotate: torusRotate,
+                    rotate: cubeRotate,
                   }}
-                  src="/assets/images/torus.png"
-                  alt="torus image"
-                  className="size-[140px]"
                 />
-              </Circle>
+              </Vacuumcleanerrobot>
+              <Vacuumcleanerrobot className="absolute left-[-100px] -top-[-100px]" animate>
+                <motion.img
+                  style={{
+                    rotate: cubeRotate,
+                  }}
+                />
+              </Vacuumcleanerrobot>
+              <Vacuumcleanerrobot className="absolute left-[-100px] -top-[-100px]" animate>
+                <motion.img
+                  style={{
+                    rotate: cubeRotate,
+                  }}
+                />
+              </Vacuumcleanerrobot>
+              <Vacuumcleanerrobot className="absolute left-[240px] -top-[760px]" animate>
+                <motion.img
+                  style={{
+                    rotate: cubeRotate,
+                  }}
+                />
+              </Vacuumcleanerrobot>
             </div>
-
-            <motion.div
-              style={{
-                rotate: icosahedronRotate,
-              }}
-              className="inline-flex"
-              ref={icosahedronRef}
-            >
-              <img
-                src="/assets/images/icosahedron.png"
-                alt="3D"
-                className="absolute w-[calc(100%+100px)] max-w-none -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 saturate-[10%] brightness-[4%] hue-rotate-[240deg]"
-              />
-              <img
-                src="/assets/images/icosahedron.png"
-                alt="3D image"
-                className="w-[140px] select-none"
-                draggable="false"
-              />
-            </motion.div>
           </div>
         </div>
 

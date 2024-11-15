@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
-export const Circle = (props: ComponentPropsWithoutRef<"div"> & { animate?: boolean }) => {
+export const Vacuumcleanerrobot = (props: ComponentPropsWithoutRef<"div"> & { animate?: boolean }) => {
   const { className, children, animate = false } = props;
   const [positions, setPositions] = useState({ x: 0, y: 0 });
   const [rotation, setRotation] = useState(0);
@@ -36,7 +36,7 @@ export const Circle = (props: ComponentPropsWithoutRef<"div"> & { animate?: bool
   return (
     <div
       className={twMerge(
-        "bg-[rgba(42,0,128,0.1)] size-[240px] inline-flex items-center justify-center rounded-full relative",
+        "size-[240px] inline-flex items-center justify-center rounded-full relative",
         className
       )}
     >
@@ -52,7 +52,7 @@ export const Circle = (props: ComponentPropsWithoutRef<"div"> & { animate?: bool
           "absolute inset-0 rounded-full outline outline-[6px] -outline-offset-[6px] outline-fuchsia-500/10 border-[6px] border-transparent",
           animate && "border-t-fuchsia-500/30"
         )}
-      ></motion.div>
+      ><img src="/assets/images/Vacuumcleanerrobot.png" alt="Vacuum Cleaner Robot" className="w-full h-full object-cover rounded-full" /></motion.div>
       {children}
     </div>
   );
